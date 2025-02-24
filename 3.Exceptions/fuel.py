@@ -5,9 +5,11 @@ def main():
 
 def get_fuel():
 	while True:
+		input_fuel = input('Fraction: ')
 		try:
-			input_fuel = input('Fraction: ')
 			x, y = input_fuel.split('/')
+			if x > y:
+				continue
 			fuel = int(x) / int(y) * 100
 		except (ValueError, ZeroDivisionError):
 			pass
