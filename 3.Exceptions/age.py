@@ -10,8 +10,7 @@ def get_old():
 		except ValueError:
 			print('Your age have to written in a number')
 		else:
-			break
-	return age
+			return age
 
 
 main()
