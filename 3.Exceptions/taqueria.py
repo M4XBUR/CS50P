@@ -13,7 +13,7 @@ total_cost = 0
 
 while True:
     try:
-        user_order = input('Item: ').title()
+        user_order = input('Item: ').title().strip()
         total_cost += price_list[user_order]
         print(f'Total: ${total_cost:.2f}')
     except KeyError:
