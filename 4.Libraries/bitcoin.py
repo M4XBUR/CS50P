@@ -5,7 +5,7 @@ try:
     response_json = response.json()
     price_bitcoin = float(response_json['data']['priceUsd'])
 except requests.RequestException as e:
-    print('Ошибка соединения:', e)
+    print('Ошибка:', e)
     exit()
 except (KeyError, ValueError) as e:
     print(f'Ошибка обработки данных: {e}')
@@ -13,11 +13,11 @@ except (KeyError, ValueError) as e:
 
 while True:
 	try:
-		count_bitcoins = float(input('write count bitcoins: '))
+		count_bitcoins = float(input('Введите количество биткойнов: '))
 		break
 	except ValueError:
-		print('U must write number')
+		print('Вы должны написать число')
 		exit()
 
 total_cost = count_bitcoins * price_bitcoin
-print(f'Cost for {count_bitcoins} bitcoins: {total_cost:.2f}USD')
+print(f'Цена за {count_bitcoins} биткойна: {total_cost:.2f}USD')
