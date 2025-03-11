@@ -1,6 +1,5 @@
 # CS50’s Introduction to Programming with Python
-[![Course: HarvardX](https://img.shields.io/badge/Course-HarvardX-red.svg)](https://learning.edx.org/course/course-v1:HarvardX+CS50P+Python/home)  
-[Link to CS50P](https://cs50.harvard.edu/python/2022/)  
+[![Course: HarvardX](https://img.shields.io/badge/Course-HarvardX-red.svg)](https://learning.edx.org/course/course-v1:HarvardX+CS50P+Python/home)
 [![Link: CS50P](https://img.shields.io/badge/Link-CS50P-green.svg)](https://cs50.harvard.edu/python/2022/)  
   
 ## Course Contents  
