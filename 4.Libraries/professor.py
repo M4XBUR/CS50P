@@ -1,4 +1,4 @@
-import random
+from random import randint
 
 def main():
     generate_integer(get_level())
@@ -17,14 +17,14 @@ def generate_integer(level):
     count_game = 0
     while count_game <= 10:
         if level == '1':
-            x = random.randint(0,9)
-            y = random.randint(0,9)
+            x = randint(0,9)
+            y = randint(0,9)
         elif level == '2':
-            x = random.randint(10,99)
-            y = random.randint(10,99)
+            x = randint(10,99)
+            y = randint(10,99)
         elif level == '3':
-            x = random.randint(100,999)
-            y = random.randint(100,999)
+            x = randint(100,999)
+            y = randint(100,999)
         
         score = 0
         try:
